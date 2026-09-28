@@ -1,0 +1,28 @@
+# Temporary / editor files
+*~
+*.swp
+*.tmp
+*.log
+
+# Our Hyprland recovery copies
+*.bak
+*.broken
+*.working
+*.factory-backup
+
+# Secrets / credentials
+**/hosts.yml
+**/*token*
+**/*secret*
+**/*credential*
+
+# Never add these if directory structure expands later
+.ssh/
+.gnupg/
+.local/share/keyrings/
+.config/gh/
+.config/ProtonVPN/
+.config/protonvpn/
+.config/tailscale/
+.mozilla/
+.cache/

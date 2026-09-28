@@ -1,0 +1,26 @@
+font=DejaVu Sans 10
+
+background-color=#d3d8dc
+text-color=#12181d
+
+border-color=#315f8a
+border-size=1
+border-radius=0
+
+padding=8
+margin=7
+
+width=360
+height=110
+
+anchor=top-right
+
+default-timeout=5000
+ignore-timeout=0
+
+max-visible=4
+max-history=8
+
+on-button-left=dismiss
+on-button-right=dismiss-all
+

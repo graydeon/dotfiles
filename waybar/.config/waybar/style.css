@@ -1,0 +1,113 @@
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: "DejaVu Sans";
+    font-size: 11px;
+    font-weight: normal;
+}
+
+window#waybar {
+    background: #c9d0d6;
+    color: #11161b;
+
+    border-top: 1px solid #f3f5f6;
+    border-bottom: 1px solid #66717a;
+}
+
+/* Classic raised "Applications" button */
+#custom-menu {
+    background: #c9d0d6;
+    color: #11161b;
+
+    padding: 0 10px;
+
+    border-top: 1px solid #f5f7f8;
+    border-left: 1px solid #f5f7f8;
+    border-right: 1px solid #66717a;
+    border-bottom: 1px solid #66717a;
+}
+
+#custom-menu:hover {
+    background: #dce1e5;
+}
+
+/* Workspace buttons behave like compact task tabs */
+#workspaces {
+    background: #bfc7cd;
+}
+
+#workspaces button {
+    padding: 0 9px;
+    margin: 2px 1px;
+
+    background: #c9d0d6;
+    color: #202830;
+
+    border-top: 1px solid #eef1f3;
+    border-left: 1px solid #eef1f3;
+    border-right: 1px solid #6f7880;
+    border-bottom: 1px solid #6f7880;
+}
+
+#workspaces button:hover {
+    background: #dbe0e4;
+}
+
+#workspaces button.active {
+    background: #3a6ea5;
+    color: #ffffff;
+
+    border-top: 1px solid #234a70;
+    border-left: 1px solid #234a70;
+    border-right: 1px solid #7da6cc;
+    border-bottom: 1px solid #7da6cc;
+}
+
+#workspaces button.urgent {
+    background: #9a3535;
+    color: #ffffff;
+}
+
+/* Current window title */
+#window {
+    padding: 0 10px;
+    color: #17212a;
+}
+
+/* Right-side "status fields" */
+#cpu,
+#memory,
+#pulseaudio,
+#network,
+#battery,
+#tray,
+#clock {
+    background: #c3cbd1;
+    color: #11161b;
+
+    padding: 0 6px;
+
+    border-left: 1px solid #eef1f3;
+    border-right: 1px solid #747d85;
+}
+
+#pulseaudio:hover,
+#network:hover,
+#battery:hover,
+#clock:hover {
+    background: #dbe0e4;
+}
+
+#network.disconnected {
+    color: #8c2222;
+}
+
+#battery.warning {
+    color: #7a5200;
+}
+
+#battery.critical {
+    background: #8f2929;
+    color: #ffffff;
+}

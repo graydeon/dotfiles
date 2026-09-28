@@ -1,0 +1,57 @@
+* {
+    font-family: "DejaVu Sans";
+    font-size: 12px;
+}
+
+window {
+    background-color: #c9d0d6;
+    color: #11161b;
+
+    border: 2px solid #315f8a;
+    border-radius: 0;
+}
+
+#outer-box {
+    margin: 5px;
+    padding: 4px;
+}
+
+#input {
+    margin: 3px 3px 7px 3px;
+    padding: 6px 8px;
+
+    background-color: #ffffff;
+    color: #101820;
+
+    border: 1px solid #68747e;
+    border-radius: 0;
+}
+
+#scroll {
+    border: 1px solid #6f7982;
+    background-color: #eef1f3;
+}
+
+#inner-box {
+    background-color: #eef1f3;
+}
+
+#entry {
+    padding: 5px 7px;
+    border-radius: 0;
+    color: #17212a;
+}
+
+#entry:selected {
+    background-color: #3a6ea5;
+    color: #ffffff;
+}
+
+#img {
+    margin-right: 8px;
+}
+
+#text {
+    color: inherit;
+}
+

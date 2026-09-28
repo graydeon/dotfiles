@@ -1,0 +1,86 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 28,
+    "spacing": 0,
+    "reload_style_on_change": true,
+
+    "modules-left": [
+        "custom/menu",
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+
+    "modules-right": [
+        "cpu",
+        "memory",
+        "pulseaudio",
+        "network",
+        "battery",
+        "tray",
+        "clock"
+    ],
+
+    "custom/menu": {
+        "format": " Applications ",
+        "tooltip": false,
+        "on-click": "wofi --show drun"
+    },
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "disable-scroll": true,
+        "all-outputs": true
+    },
+
+    "hyprland/window": {
+        "format": "{title}",
+        "max-length": 58,
+        "separate-outputs": true
+    },
+
+    "cpu": {
+        "interval": 5,
+        "format": " CPU {usage}% "
+    },
+
+    "memory": {
+        "interval": 5,
+        "format": " RAM {percentage}% "
+    },
+
+    "pulseaudio": {
+        "format": " VOL {volume}% ",
+        "format-muted": " MUTE ",
+        "scroll-step": 5,
+        "on-click": "pavucontrol"
+    },
+
+    "network": {
+        "interval": 5,
+        "format-wifi": " WLAN {signalStrength}% ",
+        "format-ethernet": " LAN ",
+        "format-disconnected": " OFFLINE ",
+        "tooltip-format": "{ifname}\n{ipaddr}/{cidr}"
+    },
+
+    "battery": {
+        "interval": 30,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": " BAT {capacity}% ",
+        "format-charging": " AC {capacity}% "
+    },
+
+    "clock": {
+        "interval": 30,
+        "format": " {:%m/%d/%Y %I:%M %p} ",
+        "tooltip-format": "{:%A, %B %d, %Y}"
+    },
+
+    "tray": {
+        "spacing": 5
+    }
+}
