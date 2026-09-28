@@ -1,28 +1,108 @@
-# Temporary / editor files
+# ============================================================
+# Dotfiles repository exclusions
+# ============================================================
+
+# ------------------------------------------------------------
+# Editor / temporary files
+# ------------------------------------------------------------
+
 *~
 *.swp
+*.swo
 *.tmp
 *.log
+.DS_Store
 
-# Our Hyprland recovery copies
+
+# ------------------------------------------------------------
+# Local backups / recovery copies
+# ------------------------------------------------------------
+
 *.bak
 *.broken
 *.working
 *.factory-backup
 
-# Secrets / credentials
-**/hosts.yml
+
+# ------------------------------------------------------------
+# Environment files / application secrets
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+
+**/.env
+**/.env.*
+!**/.env.example
+
 **/*token*
 **/*secret*
 **/*credential*
 
-# Never add these if directory structure expands later
-.ssh/
-.gnupg/
-.local/share/keyrings/
-.config/gh/
-.config/ProtonVPN/
-.config/protonvpn/
-.config/tailscale/
-.mozilla/
-.cache/
+
+# ------------------------------------------------------------
+# SSH / GPG / cryptographic credentials
+# ------------------------------------------------------------
+
+**/.ssh/**
+**/.gnupg/**
+
+
+# ------------------------------------------------------------
+# GitHub authentication
+# ------------------------------------------------------------
+
+**/.config/gh/**
+
+
+# ------------------------------------------------------------
+# Password/keyring state
+# ------------------------------------------------------------
+
+**/.local/share/keyrings/**
+
+
+# ------------------------------------------------------------
+# VPN / overlay-network credentials and state
+# ------------------------------------------------------------
+
+**/.config/ProtonVPN/**
+**/.config/protonvpn/**
+**/.config/tailscale/**
+
+
+# ------------------------------------------------------------
+# Network credentials
+# ------------------------------------------------------------
+
+**/.config/NetworkManager/**
+**/NetworkManager/system-connections/**
+
+
+# ------------------------------------------------------------
+# Browser profiles / sessions
+# ------------------------------------------------------------
+
+**/.mozilla/**
+**/.config/chromium/**
+**/.config/google-chrome/**
+
+
+# ------------------------------------------------------------
+# Shell / interactive history
+# ------------------------------------------------------------
+
+**/.bash_history
+**/.zsh_history
+**/.lesshst
+**/.python_history
+**/.node_repl_history
+
+
+# ------------------------------------------------------------
+# Cache / runtime state
+# ------------------------------------------------------------
+
+**/.cache/**
+**/.local/share/Trash/**
